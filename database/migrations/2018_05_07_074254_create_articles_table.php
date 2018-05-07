@@ -20,6 +20,8 @@ class CreateArticlesTable extends Migration
             $table->decimal('amount', 8, 2);
             $table->integer('discount');
             $table->integer('stock');
+            $table->unsignedInteger('categorie_id');
+            $table->foreign('categorie_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
