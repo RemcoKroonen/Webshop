@@ -20,7 +20,6 @@ class CreateArticlesTable extends Migration
             $table->decimal('amount', 8, 2);
             $table->integer('discount');
             $table->integer('stock');
-            $table
             $table->timestamps();
         });
     }
