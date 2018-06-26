@@ -15,6 +15,16 @@
                     @endif
 
                     Welcome to the categorie page!
+                    
+                    @if(count($categorieen)> 1)
+                        @foreach($categorieen as $categorie)
+                            <h3>{{$categorie->name}}</h3>
+                             <small>{{$categorie->description}}</small>
+                        @endforeach
+                    @else
+                        <p>geen categorieen gevonden</p>
+                    @endif
+
                 </div>
             </div>
         </div>
