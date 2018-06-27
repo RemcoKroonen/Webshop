@@ -14,27 +14,27 @@ class CatergorieTableSeeder extends Seeder
         DB::table('categories')->delete();
         DB::table('categories')->insert([
             'id' => '1',
-            'name' => 'Muis',
+            'name' => 'Muizen',
             'description' => 'Kies een muis uit',
         ]);
         DB::table('categories')->insert([
              'id' => '2',
-            'name' => 'Stoel',
+            'name' => 'Stoelen',
             'description' => 'Kies een stoel uit',
         ]);
         DB::table('categories')->insert([
              'id' => '3',
-            'name' => 'toetsenbord',
+            'name' => 'toetsenborden',
             'description' => 'Kies een toetsenbord uit',
         ]);
         DB::table('categories')->insert([
              'id' => '4',
-            'name' => 'Muispad',
+            'name' => 'muismatten',
             'description' => 'Kies een muispad uit',
         ]);
         DB::table('categories')->insert([
              'id' => '5',
-            'name' => 'Beeldscherm',
+            'name' => 'Beeldschermen',
             'description' => 'Kies een beeldscherm uit',
         ]);
     }
