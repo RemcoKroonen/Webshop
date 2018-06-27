@@ -14,10 +14,21 @@ class ArticleController extends Controller
      */
     public function index()
     {	
-    	 return  article::all();
+    	$articles = article::all();
+    	return view('article')->with('articles', $articles);
+    	 //return  article::all();
          //return view('article')->with('articles', $articles);
          //return view('artikel');
     }
+
+    public function articlesincategorie($categorie_id){
+
+    	$articlesincategorie = article::where('categorie_id', '=' , $categorie_id)->get();
+    	return view('articlesincategorie')->with('articlesincategorie', $articlesincategorie);
+    	//return article::where('categorie_id', '=' , $categorie_id)->get();
+
+    }
+
 
     /**
      * Show the form for creating a new resource.

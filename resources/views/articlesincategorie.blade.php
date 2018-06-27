@@ -16,10 +16,10 @@
 
                     Welcome to the article page!
 
-                    @if(count($articles)> 1)
-                        @foreach($articles as $article)
-                            <h3>{{$article->name}}</h3>
-                             <small>{{$article->description}}</small>
+                    @if(count($articlesincategorie)> 1)
+                        @foreach($articlesincategorie as $articleincategorie)
+                            <h3>{{$articleincategorie->name}}</h3>
+                             <small>{{$articleincategorie->description}}</small>
                         @endforeach
                     @else
                         <p>geen article gevonden</p>

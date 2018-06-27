@@ -19,4 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/categorie','CategorieController@index')->name('categorie');
+//Route::get('/article','ArticleController@index')->name('article');
 Route::resource('/article','ArticleController');
+Route::get('/articlesincategorie/{categorie_id}', 'ArticleController@articlesincategorie')->name('articlesincategorie');
