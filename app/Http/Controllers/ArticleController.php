@@ -12,10 +12,10 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($categorie_id)
-    {
-    	 //return  article::all();
-         //return view('artikel')->with('categorieen', $categorieen);
+    public function index()
+    {	
+    	 return  article::all();
+         //return view('article')->with('articles', $articles);
          //return view('artikel');
     }
 
