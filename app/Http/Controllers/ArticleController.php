@@ -59,7 +59,10 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        //
+        $articles = article::where('id', '=' , $id)->get();
+        return view('articledetail')->with('articles', $articles);
+    	//return view('articlesincategorie')->with('articlesincategorie', $articlesincategorie);
+    	//return article::where('categorie_id', '=' , $categorie_id)->get();
     }
 
     /**

@@ -16,10 +16,16 @@
 
                     Welcome to the article page!
 
-                    @if(count($articlesincategorie)> 1)
-                        @foreach($articlesincategorie as $articleincategorie)
-                            <h3><a href="http://webshop.local/article/{{$articleincategorie->id}}">{{$articleincategorie->name}}</a></h3>
-                             <small>{{$articleincategorie->description}}</small>
+                    @if(count($articles)> 0)
+                        @foreach($articles as $article)
+                            <h3>{{$article->name}}</h3>
+                             <small>{{$article->description}}</small>
+                             <br>
+                             <small>{{$article->amount}}</small>
+                             <br>
+                             <small>{{$article->discount}}</small>
+                             <br>
+                             <small>{{$article->stock}}</small>
                         @endforeach
                     @else
                         <p>geen article gevonden</p>

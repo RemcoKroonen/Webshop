@@ -22,3 +22,6 @@ Route::get('/categorie','CategorieController@index')->name('categorie');
 //Route::get('/article','ArticleController@index')->name('article');
 Route::resource('/article','ArticleController');
 Route::get('/articlesincategorie/{categorie_id}', 'ArticleController@articlesincategorie')->name('articlesincategorie');
+//Route::get('user/{id}', function ($id) {
+   // return 'User '.$id;
+//});
