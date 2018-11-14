@@ -18,7 +18,7 @@
 
                     @if(count($articlesincategorie)> 1)
                         @foreach($articlesincategorie as $articleincategorie)
-                            <h3><a href="http://webshop.local/article/{{$articleincategorie->id}}">{{$articleincategorie->name}}</a></h3>
+                            <h3><a href="/article/{{$articleincategorie->id}}">{{$articleincategorie->name}}</a></h3>
                              <small>{{$articleincategorie->description}}</small>
                         @endforeach
                     @else
