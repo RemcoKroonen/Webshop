@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 class ShoppingCartController extends Controller
 
-{
+{   
+    
+
+    
     /**
      * Show the profile for the given user.
      *
@@ -28,4 +31,6 @@ class ShoppingCartController extends Controller
 
         return $request->session()->get($article_id);
     }
+
+
 }

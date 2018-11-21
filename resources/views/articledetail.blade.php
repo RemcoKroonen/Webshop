@@ -27,7 +27,8 @@
                              <br>
                              <small>{{$article->stock}}</small>
 
-                             <a href="/toevoegen/{"><butto>shopping cart</button></a>
+                             <a href='/toevoegen/{'><butto>shopping cart</button></a>
+
                         @endforeach
                     @else
                         <p>geen article gevonden</p>

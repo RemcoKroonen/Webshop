@@ -23,4 +23,4 @@ Route::get('/categorie','CategorieController@index')->name('categorie');
 Route::resource('/article','ArticleController');
 Route::get('/articlesincategorie/{categorie_id}', 'ArticleController@articlesincategorie')->name('articlesincategorie');
 Route::get('/toevoegen/{article_id}/{articles_ordered}', 'ShoppingCartController@toevoegen')->name('toevoegen');
-Route::get('/')
+//Route::get('/user', 'UserController@index');
